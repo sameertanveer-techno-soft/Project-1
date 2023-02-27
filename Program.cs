@@ -32,7 +32,7 @@ namespace Project1
             do
             {
 
-                Console.Write("1.Add new stuident\n2.Display all student\n3.Update existing student\n4.Exit\n Select one : ");
+                Console.Write("1.Add new stuident\n2.Display all students\n3.Update existing student\n4.Exit\n Select one : ");
                 string userSelection = Console.ReadLine();
                 switch (userSelection)
                 {
