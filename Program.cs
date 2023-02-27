@@ -16,7 +16,7 @@ namespace Project1
     {
         class Global
         {
-            public static string path = @"C:\Users\sameer.tanveer\source\repos\Project1\Project1\students.json";
+            public static string path = @"C:\Users\sameer.tanveer\Documents\GitHub\Project-1\students.json";
 
         }
         public static object JsonConvert { get; private set; }
@@ -52,7 +52,8 @@ namespace Project1
                         menu = false;
                         break;
                     default:
-                        Console.WriteLine("invalid input! try again!");
+                        Console.WriteLine(Messages.InvalidInput);
+                        //Console.WriteLine(ErrorMessage.InvalidInput);
                         break;
                 }
             } while (menu == true);
@@ -62,7 +63,11 @@ namespace Project1
 
         public static void DisplayAllStudents()
         {
-            
+            if (!File.Exists(Global.path))
+            {
+                Console.WriteLine(Messages.NoRecordFound);
+                return ;
+            }
             string json = File.ReadAllText(Global.path);
             List<StudentClass> students = Newtonsoft.Json.JsonConvert.DeserializeObject<List<StudentClass>>(json);
             Console.WriteLine("---------------------------------------");
@@ -99,6 +104,11 @@ namespace Project1
 
             StudentClass student = new StudentClass(fname, lname, age, ContactNo, standard, city);
             
+            if (!File.Exists(Global.path))
+            {
+                FileStream fs = File.Create(Global.path);
+                fs.Close();
+            }
             string array = File.ReadAllText(Global.path);
             //Convert the array we are getting from the students.json to a LIST object
             List<StudentClass> students = Newtonsoft.Json.JsonConvert.DeserializeObject<List<StudentClass>>(array) ?? new List<StudentClass>();
@@ -109,7 +119,7 @@ namespace Project1
     
             File.WriteAllText(Global.path, updatedJson);
             Console.WriteLine("--------------------------------------------------------");
-            Console.WriteLine("\tNew Student Added!!");
+            Console.WriteLine(Messages.studentAdded);
             Console.WriteLine("--------------------------------------------------------");
 
 
@@ -146,13 +156,13 @@ namespace Project1
                 string updatedJson = Newtonsoft.Json.JsonConvert.SerializeObject(students);
                 File.WriteAllText(Global.path, updatedJson);
                 Console.WriteLine("---------------------------------------");
-                Console.WriteLine("\tStudent record updated successfully");
+                Console.WriteLine(Messages.RecordUpdated);
                 Console.WriteLine("---------------------------------------");
 
             }
             else
             {
-                Console.WriteLine("Student not found");
+                Console.WriteLine(Messages.NoRecordFound);
             }
         }
     }
