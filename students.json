@@ -1,1 +1,20 @@
-[{"Id":"B884F4116A","FirstName":"sameer","LastName":"tanveer","Age":"23","ContactNo":"0987654","Standard":"12","City":"LHR"},{"Id":"F9F770F551","FirstName":"abc","LastName":"asdas","Age":"asdas","ContactNo":"sada","Standard":"asd","City":"asad"}]
+[
+  {
+    "Id": "B884F4116A",
+    "FirstName": "sameer",
+    "LastName": "tanveer",
+    "Age": "23",
+    "ContactNo": "0987654",
+    "Standard": "12",
+    "City": "LHR"
+  },
+  {
+    "Id": "F9F770F551",
+    "FirstName": "abc",
+    "LastName": "asdas",
+    "Age": "asdas",
+    "ContactNo": "sada",
+    "Standard": "asd",
+    "City": "asad"
+  }
+]

@@ -16,8 +16,9 @@ namespace Project1
     {
         class Global
         {
-            public static string path = @"C:\Users\sameer.tanveer\Documents\GitHub\Project-1\students.json";
-
+            
+            public static string path = EnvironmentVar.PATH;
+           
         }
         public static object JsonConvert { get; private set; }
         
@@ -29,6 +30,7 @@ namespace Project1
             Console.WriteLine("Hello welcome to the Student Portal");
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("Here you can do the following things:");
+           
             do
             {
 
