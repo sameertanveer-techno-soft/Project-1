@@ -45,4 +45,17 @@ namespace Project1
             return BitConverter.ToString(id).Replace("-", "");
         }
     }
+    public static class Messages
+    {
+        public const string NoRecordFound = "No student exist!"; 
+        public const string InvalidInput = "invalid input! try again!";
+        public const string RecordUpdated = "Student record updated successfully";
+        public const string studentAdded = "New Student Added!!";
+    }
+    public static class EnvironmentVar 
+    { 
+        public const string PATH = @"C:\Users\sameer.tanveer\Documents\GitHub\Project-1\students.json"; 
+        
+    }
+
 }
