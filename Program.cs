@@ -27,7 +27,7 @@ namespace Project1
             bool menu = true;
             
             Console.WriteLine("-------------------------------------");
-            Console.WriteLine("Hello welcome to the Student Portal");
+            Console.WriteLine("Hello welcome to the Students Portal");
             Console.WriteLine("-------------------------------------");
             Console.WriteLine("Here you can do the following things:");
            
