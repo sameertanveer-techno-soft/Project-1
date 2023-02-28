@@ -55,7 +55,7 @@ namespace Project1
                         break;
                     default:
                         Console.WriteLine(Messages.InvalidInput);
-                        //Console.WriteLine(ErrorMessage.InvalidInput);
+                       
                         break;
                 }
             } while (menu == true);
@@ -112,11 +112,11 @@ namespace Project1
                 fs.Close();
             }
             string array = File.ReadAllText(Global.path);
-            //Convert the array we are getting from the students.json to a LIST object
+        
             List<StudentClass> students = Newtonsoft.Json.JsonConvert.DeserializeObject<List<StudentClass>>(array) ?? new List<StudentClass>();
            
             students.Add(student);
-            //take the new LIST object and and returns a JSON string 
+
             string updatedJson = Newtonsoft.Json.JsonConvert.SerializeObject(students);
     
             File.WriteAllText(Global.path, updatedJson);
