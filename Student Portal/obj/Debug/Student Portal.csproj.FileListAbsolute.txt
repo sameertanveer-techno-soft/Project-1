@@ -1,0 +1,13 @@
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\bin\Debug\Student Portal.exe.config
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\bin\Debug\Student Portal.exe
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\bin\Debug\Student Portal.pdb
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\bin\Debug\Newtonsoft.Json.xml
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\obj\Debug\Student Portal.csproj.AssemblyReference.cache
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\obj\Debug\Student Portal.csproj.SuggestedBindingRedirects.cache
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\obj\Debug\Student Portal.csproj.CoreCompileInputs.cache
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\obj\Debug\Student Portal.csproj.CopyComplete
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\obj\Debug\Student Portal.exe
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\obj\Debug\Student Portal.pdb
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\bin\Debug\DotEnv.dll
+C:\Users\sameer.tanveer\Documents\GitHub\Student Portal\Student Portal\bin\Debug\System.IO.Abstractions.dll
